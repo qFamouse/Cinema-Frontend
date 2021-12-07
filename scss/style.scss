@@ -1,6 +1,7 @@
-@import "base/colors";
-@import "base/typography";
+@import "navbar/navbar";
 
-body {
-  background: $palette-black;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }

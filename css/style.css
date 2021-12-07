@@ -1,5 +1,54 @@
-body {
-  background: #000000;
+.navbar__menu__links, .navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background: #e45b5e;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1200px) / 2);
+  z-index: 10;
+  position: relative;
+}
+.navbar__menu {
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+@media screen and (max-width: 760px) {
+  .navbar__menu {
+    display: none;
+  }
+}
+.navbar__menu__links {
+  color: #ffffff;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.navbar__menu__links:hover {
+  color: #000000;
+  transition: all 0.2s ease;
+}
+.navbar__menu #button {
+  padding: 8px 24px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background: #6bb5ab;
+  color: #5a5349;
+}
+.navbar__menu #button:hover {
+  background: #3ea500;
+  transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
