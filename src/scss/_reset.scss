@@ -1,0 +1,16 @@
+/*------------------------------------*\
+  RESET STYLES
+\*------------------------------------*/
+/**
+ * Import resets
+ *
+ */
+
+@import "core/reset/normalize";
+@import "core/reset/reset";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

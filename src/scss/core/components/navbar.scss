@@ -1,6 +1,5 @@
-@import "../base/typography";
-@import "../base/colors";
-
+@import "../variables/index";
+@import "../tools/index";
 
 $headerHeight: 50px;
 $borderRadius: 12px;
@@ -8,35 +7,9 @@ $borderRadius: 12px;
 $spacing-md: 16px;
 $spacing-lg: 32px;
 
-@mixin breakpoint($point) {
-  @if $point == sm {
-    @media (min-width: 576px) { // ≥576px
-      @content;
-    }
-  }
-  @else if $point == md { // ≥768px
-    @media (min-width: 768px) {
-      @content;
-    }
-  }
-  @else if $point == lg { // ≥992px
-    @media (min-width: 992px) {
-      @content;
-    }
-  }
-  @else if $point == xl { // ≥1200px
-    @media (min-width: 1200px) {
-      @content;
-    }
-  }
-  @else if $point == xxl { // ≥1400px
-    @media (min-width: 1400px) {
-      @content;
-    }
-  }
-}
-
 .header {
+  font-family: $font-family-tertiary;
+
   background: $palette-secondary;
   width: 100%;
   height: $headerHeight;

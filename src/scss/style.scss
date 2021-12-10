@@ -1,7 +1,2 @@
-@import "navbar/navbar";
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "reset";
+@import "core/components/navbar";
