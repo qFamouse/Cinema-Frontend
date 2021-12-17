@@ -12,7 +12,13 @@ $x-color-tradewind: #6bb5ab;
 $x-color-mandy: #e45b5e;
 $x-color-wild-sand: #f5f5f5;
 $x-color-fuscous-gray: #5a5349;
-
+$x-color-masala: #48413F;
+$x-color-gray-nickel: #BFBFB8;
+$x-color-mercury: #E3E3E3;
+$x-color-wild-sand: #F5F5F5;
+$x-color-janna: #F3E9D4;
+$x-color-storm-dust: #666665;
+$x-color-silver-sand: #BCBEC0;
 // Usable Colors //
 $palette-background: $x-color-pampas;
 
@@ -25,3 +31,15 @@ $palette-footer: $x-color-fuscous-gray;
 
 $palette-white: $x-color-white;
 $palette-black: $x-color-black;
+
+// Content Colors //
+$palette-content-title: $x-color-masala;
+
+// Schedule Colors //
+$palette-schedule-title: $x-color-gray-nickel;
+$palette-schedule-background: $x-color-wild-sand;
+$palette-schedule-border: $x-color-mercury;
+$palette-schedule-button: $x-color-janna;
+
+$palette-film-title: $x-color-storm-dust;
+$palette-film-original-title: $x-color-silver-sand;

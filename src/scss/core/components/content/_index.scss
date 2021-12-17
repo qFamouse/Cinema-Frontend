@@ -1,0 +1,33 @@
+@import "../../tools";
+@import "../../variables";
+@import "schedule";
+
+$title-font-size: 3.6em;
+
+.content {
+  // .content__body
+  &__body {
+    padding: 0 2rem;
+    @include breakpoint(md) {
+      padding: 0 6rem;
+    }
+    transition: 0.3s ease all;
+  }
+
+  &__header {
+    //min-height:67px;
+    //margin-bottom:49px;
+  }
+
+  &__title {
+    padding:0 0 0 60px;
+    margin-bottom: 0.15em;
+    background:url(../img/img_sprite.png) no-repeat 0px -5px;
+
+    text-transform:uppercase;
+    font-family: $font-family-secondary;
+    font-size: $title-font-size;
+    color: $palette-content-title;
+    letter-spacing:0.03em;
+  }
+}

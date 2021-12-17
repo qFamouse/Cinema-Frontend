@@ -1,2 +1,7 @@
-@import "reset";
+@import "core/reset";
 @import "core/components/navbar";
+@import "core/components/content";
+
+body {
+  background: $palette-background;
+}
