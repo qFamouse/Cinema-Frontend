@@ -767,6 +767,45 @@ textarea:focus {
   color: #bbb;
 }
 
+.content__title--contacts {
+  padding: 0 0 0 80px;
+  margin-bottom: 0.15em;
+  background: url(../img/small_sprite.png) no-repeat 0px -67px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+.contacts__title {
+  color: #48413F;
+}
+.contacts__address {
+  font-family: "Roboto Condensed", serif;
+  font-size: 1.1em;
+}
+.contacts__email {
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-width: 400;
+  text-transform: none;
+  color: #e45b5e;
+  margin-bottom: 1em;
+}
+.contacts__email:hover {
+  color: #6bb5ab;
+  text-decoration: none;
+  background-position: right -17px;
+}
+
+.map {
+  height: 380px;
+  border: 10px solid white;
+  margin-bottom: 2em;
+}
+
 .content__body {
   padding: 0 2rem;
   transition: 0.3s ease all;

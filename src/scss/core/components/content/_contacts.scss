@@ -1,0 +1,53 @@
+@import "../../tools";
+@import "../../variables";
+@import "../../tools";
+
+$title-font-size: 2.1em;
+$cell-size: 23px 13px;
+$button-text: "Buy for";
+
+
+.content__title--contacts {
+  padding:0 0 0 80px;
+  margin-bottom: 0.15em;
+  background: url(../img/small_sprite.png) no-repeat 0px -67px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  // .contacts__title
+  &__title {
+    color: $palette-contacts-title;
+  }
+
+  // .contacts__address
+  &__address {
+    font-family: $font-family-secondary;
+    font-size: 1.1em;
+  }
+
+  // .contacts__email
+  &__email {
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: $font-family-primary;
+    font-size: 1em;
+    font-width: 400;
+    text-transform: none;
+    color: $palette-secondary;
+    margin-bottom: 1em;
+
+    &:hover {
+      color: $palette-primary;
+      text-decoration:none;
+      background-position:right -17px;
+    }
+  }
+}
+
+.map {
+  height: 380px;
+  border: 10px solid white;
+  margin-bottom: 2em;
+}
