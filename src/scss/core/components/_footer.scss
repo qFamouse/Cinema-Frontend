@@ -2,6 +2,7 @@
 @import "../tools/index";
 
 .footer {
+  flex-shrink: 0;
   background: $palette-footer;
   width: 100%;
   padding: 0 3rem;
