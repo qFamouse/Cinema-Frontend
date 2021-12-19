@@ -703,6 +703,70 @@ textarea:focus {
   }
 }
 
+.content__title--soon {
+  padding: 0 0 0 60px;
+  margin-bottom: 0.15em;
+  background: url(../img/img_sprite.png) no-repeat 0px -67px;
+}
+
+.soon__films {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.soon__item {
+  width: 250px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.soon__item:last-child {
+  margin-bottom: 2em;
+}
+.soon__item--poster {
+  border: 11px solid white;
+  background: #ffffff;
+  margin-bottom: 1em;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+.soon__item--image {
+  object-fit: cover;
+  width: 100%;
+  height: 250px;
+}
+.soon__item--desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.soon__item--premiere-date {
+  text-align: center;
+  font: 400 1.7em/1.5em "Roboto Condensed";
+  color: #e45b5e;
+}
+.soon__item--age-limit {
+  border: 3px solid #BFBFB8;
+  color: #BFBFB8;
+  font-size: 1.6em;
+  height: 100%;
+}
+.soon__item--title {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4em;
+  font-family: "Roboto Condensed", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: left;
+}
+.soon__item--english-title {
+  color: #484a4d;
+}
+.soon__item--original-title {
+  color: #bbb;
+}
+
 .content__body {
   padding: 0 2rem;
   transition: 0.3s ease all;
