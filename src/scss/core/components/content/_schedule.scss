@@ -7,6 +7,12 @@ $cell-size: 23px 13px;
 $button-text: "Buy for";
 
 
+.content__title--schedule {
+  padding:0 0 0 60px;
+  margin-bottom: 0.15em;
+  background:url(../img/img_sprite.png) no-repeat 0px -5px;
+}
+
 .schedule {
 
 }
@@ -99,10 +105,10 @@ $button-text: "Buy for";
       background: $palette-primary;
       color: white;
     }
-
-    &:hover::before {
-      content: $button-text;
-    }
+    //
+    //&:hover::before {
+    //  content: $button-text;
+    //}
   }
 }
 

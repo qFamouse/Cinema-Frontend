@@ -499,6 +499,12 @@ textarea:focus {
   }
 }
 
+.content__title--schedule {
+  padding: 0 0 0 60px;
+  margin-bottom: 0.15em;
+  background: url(../img/img_sprite.png) no-repeat 0px -5px;
+}
+
 .hall__title {
   font-family: "Roboto Condensed", serif;
   font-size: 2.1em;
@@ -560,9 +566,6 @@ textarea:focus {
 .seance-content__item-button:hover {
   background: #6bb5ab;
   color: white;
-}
-.seance-content__item-button:hover::before {
-  content: "Buy for";
 }
 
 .film-description {
@@ -667,6 +670,39 @@ textarea:focus {
   background-position: right -17px;
 }
 
+.content__title--about {
+  padding: 0 0 0 60px;
+  margin-bottom: 0.15em;
+  background: url(../img/small_sprite.png) no-repeat;
+}
+
+.sentences {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sentences__item {
+  margin-bottom: 1em;
+}
+.sentences__item:nth-child(3) {
+  align-self: center;
+}
+.sentences__item--text {
+  font-family: "Roboto Condensed", serif;
+  font-size: 1.1em;
+}
+.sentences__item--image {
+  width: 100%;
+  border: 11px solid white;
+  box-shadow: 0 0 5px;
+  margin-right: 10px;
+}
+@media (min-width: 1200px) {
+  .sentences__item--image {
+    width: auto;
+  }
+}
+
 .content__body {
   padding: 0 2rem;
   transition: 0.3s ease all;
@@ -677,9 +713,6 @@ textarea:focus {
   }
 }
 .content__title {
-  padding: 0 0 0 60px;
-  margin-bottom: 0.15em;
-  background: url(../img/img_sprite.png) no-repeat 0 -5px;
   text-transform: uppercase;
   font-family: "Roboto Condensed", serif;
   font-size: 3.6em;
