@@ -11,6 +11,8 @@ $title-font-size: 3.6em;
   flex-grow: 1;
   // .content__body
   &__body {
+    margin: 0 auto;
+    max-width: 1200px;
     padding: 0 2rem;
     @include breakpoint(md) {
       padding: 0 6rem;
