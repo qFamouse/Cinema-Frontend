@@ -4,6 +4,8 @@
 @import "about";
 @import "soon";
 @import "contacts";
+@import "login";
+@import "../form";
 
 $title-font-size: 3.6em;
 
@@ -21,8 +23,11 @@ $title-font-size: 3.6em;
   }
 
   &__header {
-    //min-height:67px;
-    //margin-bottom:49px;
+    display: flex;
+
+    &_center {
+      justify-content: center;
+    }
   }
 
   &__title {
