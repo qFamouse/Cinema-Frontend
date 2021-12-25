@@ -633,7 +633,7 @@ textarea:focus {
   font-size: 1.4285em;
 }
 .film-info__source-title {
-  color: #BCBEC0;
+  color: #BFBFB8;
   font-weight: 400;
   font-size: 1.4285em;
   margin-bottom: 0.7em;
@@ -984,6 +984,113 @@ textarea:focus {
   width: 60%;
 }
 
+.film__main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 1em;
+}
+@media (min-width: 576px) {
+  .film__main {
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 1em;
+  }
+}
+.film__images {
+  text-align: center;
+}
+@media (min-width: 576px) {
+  .film__images {
+    text-align: left;
+  }
+}
+.film__poster {
+  width: 306px;
+  border: 11px solid white;
+  background: #ffffff;
+  margin: 0 auto 1em;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 576px) {
+  .film__poster {
+    width: 100%;
+  }
+}
+.film__poster--image {
+  object-fit: cover;
+  width: 284px;
+  height: 415px;
+}
+.film__poster--desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: #BFBFB8;
+}
+.film__poster--duration {
+  padding: 0 5px 0 30px;
+  background: url(../img/img_sprite.png) no-repeat -6px -473px;
+  text-align: center;
+  font-family: "Roboto Condensed", serif;
+  font-weight: 400;
+  font-size: 1.7em;
+}
+.film__poster--age-limit {
+  border: 2px solid #BFBFB8;
+  color: #BFBFB8;
+  font-size: 1.6em;
+  height: 100%;
+}
+.film__frames--title {
+  margin: 5px 0 20px;
+  font-weight: 700;
+  font-size: 2.1em;
+  font-family: "Roboto Condensed", serif;
+  color: #BFBFB8;
+  text-transform: uppercase;
+}
+.film__frames--list {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.film__frame {
+  width: 137px;
+  border: 4px solid white;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+.film__title {
+  font-family: "Roboto Condensed", serif;
+  font-weight: 700;
+  font-size: 2.3em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.film__title_english {
+  color: #48413F;
+}
+.film__title_original {
+  color: #BFBFB8;
+  margin-bottom: 0.5em;
+}
+.film__info {
+  border-spacing: 1em 0.5em;
+  margin-bottom: 1em;
+}
+.film__info--key {
+  float: left;
+  color: #6bb5ab;
+}
+.film__synopsis {
+  margin-bottom: 1em;
+}
+.film__trailer {
+  width: 100%;
+  height: 300px;
+}
+
 .content {
   flex-grow: 1;
 }
@@ -1009,10 +1116,6 @@ textarea:focus {
   width: 60px;
   height: 60px;
 }
-.content__icon_account {
-  background: url(../img/account.png) no-repeat;
-  background-size: 100%;
-}
 .content__icon_lg-default-size {
   width: 9%;
   height: 8%;
@@ -1022,6 +1125,14 @@ textarea:focus {
     width: 60px;
     height: 60px;
   }
+}
+.content__icon_account {
+  background: url(../img/account.png) no-repeat;
+  background-size: 100%;
+}
+.content__icon_films {
+  background: url(../img/img_sprite.png) no-repeat 0px -705px;
+  background-size: 100%;
 }
 .content__title {
   display: table-cell;

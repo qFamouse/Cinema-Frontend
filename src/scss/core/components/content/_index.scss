@@ -7,6 +7,7 @@
 @import "login";
 @import "../form";
 @import "profile";
+@import "film";
 
 $title-font-size: 3.6em;
 
@@ -39,11 +40,6 @@ $title-font-size: 3.6em;
     display: table-cell;
     width: 60px;
     height: 60px;
-    // .content__icon_account
-    &_account {
-      background: url(../img/account.png) no-repeat;
-      background-size: 100%;
-    }
 
     &_lg-default-size {
       width: 9%;
@@ -52,6 +48,16 @@ $title-font-size: 3.6em;
         width: 60px;
         height: 60px;
       }
+    }
+    // .content__icon_account
+    &_account {
+      background: url(../img/account.png) no-repeat;
+      background-size: 100%;
+    }
+
+    &_films {
+      background: url(../img/img_sprite.png) no-repeat 0px -705px;
+      background-size: 100%;
     }
   }
 
