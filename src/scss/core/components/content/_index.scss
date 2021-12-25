@@ -6,6 +6,7 @@
 @import "contacts";
 @import "login";
 @import "../form";
+@import "profile";
 
 $title-font-size: 3.6em;
 
@@ -26,18 +27,47 @@ $title-font-size: 3.6em;
   }
 
   &__header {
-    display: flex;
+    display: table;
 
     &_center {
-      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+
+  // .content__icon
+  &__icon {
+    display: table-cell;
+    width: 60px;
+    height: 60px;
+    // .content__icon_account
+    &_account {
+      background: url(../img/account.png) no-repeat;
+      background-size: 100%;
+    }
+
+    &_lg-default-size {
+      width: 9%;
+      height: 8%;
+      @include breakpoint(lg) {
+        width: 60px;
+        height: 60px;
+      }
     }
   }
 
   &__title {
+    display: table-cell;
     text-transform:uppercase;
     font-family: $font-family-secondary;
-    font-size: $title-font-size;
     color: $palette-content-title;
     letter-spacing:0.03em;
+    font-size: $title-font-size;
+
+    &_size-5vw-to-lg {
+      font-size: 5vw;
+      @include breakpoint(lg) {
+        font-size: $title-font-size;
+      }
+    }
   }
 }
