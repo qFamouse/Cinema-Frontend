@@ -20,6 +20,9 @@ $x-color-janna: #F3E9D4;
 $x-color-storm-dust: #666665;
 $x-color-silver-sand: #BCBEC0;
 $x-color-nomad: #b9b3a8;
+$x-color-oslo-gray: #80838b;
+$x-color-shark: #22262b;
+$x-color-dodger-blue: #3399ff;
 // Usable Colors //
 $palette-background: $x-color-pampas;
 
@@ -63,3 +66,10 @@ $palette-profile-role-low: $x-color-tradewind;
 $palette-film-frames: $x-color-gray-nickel;
 $palette-film-eng-title: $x-color-masala;
 $palette-film-original-title: $x-color-gray-nickel;
+
+// BOOKING
+$palette-booking-background: $x-color-shark;
+$palette-booking-occupied: $x-color-oslo-gray;
+$palette-booking-selected: $x-color-white;
+$palette-booking-free: $x-color-dodger-blue;
+$palette-booking-vip: $x-color-tulip-tree;

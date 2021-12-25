@@ -1,46 +1,53 @@
 .booking {
-  // .booking__screen
-  &__screen {
-  }
-
+  max-width: 768px;
+  background: $palette-booking-background;
   // .booking__hall
   &__hall {
+    border-spacing: 1em 1em;
   }
 
   // .booking__row
   &__row {
   }
 
-  // .booking__row--label
-  &__row--label {
-
+  // .booking__block
+  &__block {
+    color: #d0d1d1;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5em;
   }
 
   // .booking__seat
   &__seat {
-    box-sizing: border-box;
-    position: relative;
-    border: 0.5px solid rgba(226, 226, 226, 0.5);
-    width: 25px;
-    height: 27px;
+    background: $palette-booking-free;
 
-    top: 100%;
-    left: 0;
-    text-align: center;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 29px;
-    color: #E2E2E2;
-  }
+    // .booking__seat_occupied
+    &_occupied {
+      border: 7px solid $palette-booking-background;
+      background: $palette-booking-occupied;
+    }
 
-  // .booking__seat--label
-  &__seat--label {
+    // .booking__seat_selected
+    &_selected {
+      box-shadow:
+              0 0 0 4px $palette-booking-background,
+              0 0 0 7px $palette-booking-free;
+      background: $palette-booking-selected;
+    }
 
+    // .booking__seat_vip
+    &_vip {
+      background: $palette-booking-vip;
+    }
 
-  }
-
-  // .booking__seat--input
-  &__seat--input {
-
+    &:not(&_occupied) {
+      &:hover {
+        box-shadow:
+                0 0 0 4px $palette-booking-background,
+                0 0 0 7px $palette-booking-free;
+      }
+    }
   }
 }
