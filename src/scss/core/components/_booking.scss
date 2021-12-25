@@ -1,0 +1,46 @@
+.booking {
+  // .booking__screen
+  &__screen {
+  }
+
+  // .booking__hall
+  &__hall {
+  }
+
+  // .booking__row
+  &__row {
+  }
+
+  // .booking__row--label
+  &__row--label {
+
+  }
+
+  // .booking__seat
+  &__seat {
+    box-sizing: border-box;
+    position: relative;
+    border: 0.5px solid rgba(226, 226, 226, 0.5);
+    width: 25px;
+    height: 27px;
+
+    top: 100%;
+    left: 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 29px;
+    color: #E2E2E2;
+  }
+
+  // .booking__seat--label
+  &__seat--label {
+
+
+  }
+
+  // .booking__seat--input
+  &__seat--input {
+
+  }
+}

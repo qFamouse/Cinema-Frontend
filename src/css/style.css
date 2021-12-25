@@ -1176,12 +1176,30 @@ textarea:focus {
   color: #b9b3a8;
 }
 
+.booking__seat {
+  box-sizing: border-box;
+  position: relative;
+  border: 0.5px solid rgba(226, 226, 226, 0.5);
+  width: 25px;
+  height: 27px;
+  top: 100%;
+  left: 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 29px;
+  color: #E2E2E2;
+}
 body {
   margin: 0;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background: #ece9e3;
+}
+
+body {
+  background: gray;
 }
 
 /*# sourceMappingURL=style.css.map */
