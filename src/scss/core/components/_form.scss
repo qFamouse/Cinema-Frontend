@@ -2,13 +2,6 @@
 @import "../variables";
 
 .form {
-  //max-width: 768px;
-  //margin: 0 auto;
-  //padding: 0 2rem;
-  //@include breakpoint(md) {
-  //  padding: 0 6rem;
-  //}
-  //transition: 0.3s ease all;
   // .form__item
   &__item {
     display: flex;
@@ -49,6 +42,7 @@
     margin:10px 0; // add top and bottom margin
     padding:10px;
     border:none;
+    font-weight: 400;
     background-color: $palette-primary;
     color: $palette-white;
     //font-weight:600;

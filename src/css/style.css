@@ -806,6 +806,18 @@ textarea:focus {
   margin-bottom: 2em;
 }
 
+.login {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  transition: 0.3s ease all;
+}
+@media (min-width: 768px) {
+  .login {
+    padding: 0 6rem;
+  }
+}
+
 .form__item {
   display: flex;
 }
@@ -842,6 +854,7 @@ textarea:focus {
   margin: 10px 0;
   padding: 10px;
   border: none;
+  font-weight: 400;
   background-color: #6bb5ab;
   color: #ffffff;
   border-radius: 5px;
