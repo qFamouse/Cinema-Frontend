@@ -526,6 +526,14 @@ textarea:focus {
 .hall__content__item:last-child {
   text-align: center;
 }
+.hall__content__item:nth-child(4) {
+  display: none;
+}
+@media (min-width: 576px) {
+  .hall__content__item:nth-child(4) {
+    display: inline-block;
+  }
+}
 .seance__header {
   width: 100%;
   border-collapse: collapse;
@@ -544,8 +552,13 @@ textarea:focus {
 .seance-content__item {
   padding: 23px 13px;
 }
-.seance-content__item:last-child {
-  text-align: right;
+.seance-content__item:nth-child(4) {
+  display: none;
+}
+@media (min-width: 576px) {
+  .seance-content__item:nth-child(4) {
+    display: table-cell;
+  }
 }
 .seance-content__item-button {
   width: 100%;
@@ -554,7 +567,7 @@ textarea:focus {
   text-decoration: none;
   user-select: none;
   background: #F3E9D4;
-  padding: 0.7em 1.5em;
+  padding: 0.7em 0;
   outline: none;
 }
 .seance-content__item-button:hover {

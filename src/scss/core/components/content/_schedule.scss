@@ -4,7 +4,7 @@
 
 $title-font-size: 2.1em;
 $cell-size: 23px 13px;
-$button-text: "Buy for";
+
 
 .schedule {
 
@@ -43,6 +43,17 @@ $button-text: "Buy for";
       &:last-child {
         text-align: center;
       }
+
+      // HIDE AGE LIMIT //
+      &:nth-child(4) {
+        display: none;
+      }
+
+      @include breakpoint(sm) {
+        &:nth-child(4) {
+          display: inline-block;
+        }
+      }
     }
   }
 
@@ -78,8 +89,19 @@ $button-text: "Buy for";
   &__item {
     padding: $cell-size;
 
-    &:last-child {
-      text-align: right;
+    //&:last-child {
+    //  text-align: right;
+    //}
+
+    // HIDE AGE LIMIT //
+    &:nth-child(4) {
+      display: none;
+    }
+
+    @include breakpoint(sm) {
+      &:nth-child(4) {
+        display: table-cell;
+      }
     }
   }
 
@@ -91,17 +113,13 @@ $button-text: "Buy for";
     text-decoration: none;
     user-select: none;
     background: $palette-schedule-button;
-    padding: .7em 1.5em;
+    padding: .7em 0;
     outline: none;
 
     &:hover {
       background: $palette-primary;
       color: white;
     }
-    //
-    //&:hover::before {
-    //  content: $button-text;
-    //}
   }
 }
 
