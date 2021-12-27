@@ -41,14 +41,6 @@ $title-font-size: 3.6em;
     width: 60px;
     height: 60px;
 
-    &_lg-default-size {
-      width: 9%;
-      height: 8%;
-      @include breakpoint(lg) {
-        width: 60px;
-        height: 60px;
-      }
-    }
     // .content__icon_account
     &_account {
       background: url(../img/account.png) no-repeat;
@@ -67,13 +59,13 @@ $title-font-size: 3.6em;
     font-family: $font-family-secondary;
     color: $palette-content-title;
     letter-spacing:0.03em;
-    font-size: $title-font-size;
+    @include font-size(1em, 4em, 4);
 
-    &_size-5vw-to-lg {
-      font-size: 5vw;
-      @include breakpoint(lg) {
-        font-size: $title-font-size;
-      }
+    &_schedule {
+      padding:0 0 0 60px;
+      margin-bottom: 0.15em;
+      background:url(../img/img_sprite.png) no-repeat 0px -5px;
+      background-size: 16%;
     }
   }
 }
