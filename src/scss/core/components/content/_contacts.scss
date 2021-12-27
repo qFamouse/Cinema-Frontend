@@ -2,17 +2,6 @@
 @import "../../variables";
 @import "../../tools";
 
-$title-font-size: 2.1em;
-$cell-size: 23px 13px;
-$button-text: "Buy for";
-
-
-.content__title--contacts {
-  padding:0 0 0 80px;
-  margin-bottom: 0.15em;
-  background: url(../img/small_sprite.png) no-repeat 0px -67px;
-}
-
 .contacts {
   display: flex;
   flex-direction: column;

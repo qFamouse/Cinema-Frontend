@@ -664,13 +664,6 @@ textarea:focus {
   background-position: right -17px;
 }
 
-.content__title--about {
-  padding: 0 0 0 60px;
-  margin-bottom: 0.15em;
-  background: url(../img/small_sprite.png) no-repeat;
-  background-size: 24%;
-}
-
 .sentences {
   display: flex;
   flex-direction: column;
@@ -696,12 +689,6 @@ textarea:focus {
   .sentences__item--image {
     width: auto;
   }
-}
-
-.content__title--soon {
-  padding: 0 0 0 60px;
-  margin-bottom: 0.15em;
-  background: url(../img/img_sprite.png) no-repeat 0px -67px;
 }
 
 .soon__films {
@@ -760,12 +747,6 @@ textarea:focus {
 }
 .soon__item--original-title {
   color: #bbb;
-}
-
-.content__title--contacts {
-  padding: 0 0 0 80px;
-  margin-bottom: 0.15em;
-  background: url(../img/small_sprite.png) no-repeat 0px -67px;
 }
 
 .contacts {
@@ -1107,17 +1088,28 @@ textarea:focus {
   margin: 0 auto;
 }
 .content__icon {
-  display: table-cell;
-  width: 60px;
-  height: 60px;
+  padding: 0 0 0 60px;
+  margin-bottom: 0.15em;
 }
 .content__icon_account {
   background: url(../img/account.png) no-repeat;
-  background-size: 100%;
+  padding: 0 0 0 70px;
 }
 .content__icon_films {
   background: url(../img/img_sprite.png) no-repeat 0px -705px;
-  background-size: 100%;
+}
+.content__icon_schedule {
+  background: url(../img/img_sprite.png) no-repeat 0px -5px;
+}
+.content__icon_about {
+  background: url(../img/small_sprite.png) no-repeat;
+}
+.content__icon_soon {
+  background: url(../img/img_sprite.png) no-repeat 0px -61px;
+}
+.content__icon_contacts {
+  padding: 0 0 14px 80px;
+  background: url(../img/small_sprite.png) no-repeat 0px -67px;
 }
 .content__title {
   display: table-cell;
@@ -1127,11 +1119,14 @@ textarea:focus {
   letter-spacing: 0.03em;
   font-size: max(1em, min(4em, calc(calc(100vw / 75) * 4)));
 }
-.content__title_schedule {
-  padding: 0 0 0 60px;
-  margin-bottom: 0.15em;
-  background: url(../img/img_sprite.png) no-repeat 0px -5px;
-  background-size: 16%;
+.content__title_2em-4em {
+  font-size: max(2em, min(4em, calc(calc(100vw / 75) * 4)));
+}
+.content__title_3em-4em {
+  font-size: max(3em, min(4em, calc(calc(100vw / 75) * 4)));
+}
+.content__title_4em-4em {
+  font-size: max(4em, min(4em, calc(calc(100vw / 75) * 4)));
 }
 
 .footer {

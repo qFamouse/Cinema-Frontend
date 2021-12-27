@@ -37,20 +37,36 @@ $title-font-size: 3.6em;
 
   // .content__icon
   &__icon {
-    display: table-cell;
-    width: 60px;
-    height: 60px;
+    padding:0 0 0 60px;
+    margin-bottom: 0.15em;
 
-    // .content__icon_account
     &_account {
       background: url(../img/account.png) no-repeat;
-      background-size: 100%;
+      padding:0 0 0 70px;
     }
 
     &_films {
       background: url(../img/img_sprite.png) no-repeat 0px -705px;
-      background-size: 100%;
     }
+
+    &_schedule {
+      background:url(../img/img_sprite.png) no-repeat 0px -5px;
+    }
+
+    &_about {
+      background:url(../img/small_sprite.png) no-repeat;
+    }
+
+    &_soon {
+      background: url(../img/img_sprite.png) no-repeat 0px -61px;
+    }
+
+    &_contacts {
+      padding:0 0 14px 80px;
+      background: url(../img/small_sprite.png) no-repeat 0px -67px;
+    }
+
+
   }
 
   &__title {
@@ -59,13 +75,18 @@ $title-font-size: 3.6em;
     font-family: $font-family-secondary;
     color: $palette-content-title;
     letter-spacing:0.03em;
-    @include font-size(1em, 4em, 4);
+    @include font-size(1em, 4em);
 
-    &_schedule {
-      padding:0 0 0 60px;
-      margin-bottom: 0.15em;
-      background:url(../img/img_sprite.png) no-repeat 0px -5px;
-      background-size: 16%;
+    &_2em-4em {
+      @include font-size(2em, 4em);
+    }
+
+    &_3em-4em {
+      @include font-size(3em, 4em);
+    }
+
+    &_4em-4em {
+      @include font-size(4em, 4em);
     }
   }
 }
